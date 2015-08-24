@@ -1,5 +1,8 @@
 Normalize changelog and errata
 ==============================
+0.10.1 24th August 2015
+-----------------------
+* More helpful error statement when trying to marshall unknown types.
 
 0.10.0 21st August 2015
 -----------------------
