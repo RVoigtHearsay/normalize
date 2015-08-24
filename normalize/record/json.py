@@ -237,9 +237,12 @@ def to_json(record, extraneous=True, prop=None):
         return record
 
     else:
+        record_json_name = "<no json_name>"
+        if record.json_name:
+            record_json_name = record.json_name
         raise TypeError(
-            "I don't know how to marshall a %s to JSON" %
-            type(record).__name__
+            "I don't know how to marshall %s (type: %s) to JSON" %
+            (record_json_name, type(record).__name__)
         )
 
 
